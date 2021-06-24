@@ -1,0 +1,150 @@
+/* setting reusable colors */
+:root {
+  --purple: #600080;
+  --aqua: aquamarine;
+  --white: antiquewhite;
+  --darkgray: #595959;
+  --darkblue: #000066;
+}
+body {
+  background-color: lightblue;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* setting up flex container for header with spacing (name on left, links on right) and design */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: var(--purple);
+  color: antiquewhite;
+  border-bottom: 5px var(--darkgray) solid;
+}
+/* make ul a flex container so links are evenly spaced */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 25px;
+}
+/* remove default list stlying (bullets) and make items list horizontally */
+#main-header li {
+  list-style: none;
+  display: inline;
+}
+
+/* remove default link text decoration (underline) */
+a {
+  color: var(--aqua);
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 25px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  margin-left: 50px;
+}
+
+/* set up flex container to center the main project image and header */
+#Horiseon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Horiseon-image {
+  width: 1427px;
+  margin-bottom: 10px;
+}
+
+#Horiseon header {
+  width: 1427px;
+  height: 70px;
+  text-align: center;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+/* set flex container to align content of the About-me section: items stacked on top of each other and centered */
+#About-Me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#About-Me img {
+  height: 400px;
+  width: 300px;
+  border: var(--purple) solid 5px;
+}
+#My-Projects {
+  text-align: center;
+}
+/* set up flex container for the smaller project boxes 2 rows of 2 on PC screen */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/*  made boxes flex items to stack the header ontop and center the header on the images */
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  align-items: center;
+  flex: 0 0 50%;
+}
+.box-container img {
+  height: 500px;
+  width: 500px;
+  display: inline;
+}
+
+.box-header {
+  position: relative;
+  background-color: var(--purple);
+  color: var(--white);
+  height: 50px;
+  width: 500px;
+  margin: 0 0 0 0;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* set footer to felx container to align links to the right */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: var(--purple);
+  color: var(--white);
+  border-top: 5px darkgray solid;
+  margin-top: 20px;
+}
+/* set list to flex container to space links out evenly */
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 25px;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-function Navbar(handlePageChange) {
+function Navbar({ currentPage, handlePageChange }) {
   return (
     <header id="main-header">
       <h1>Lacey Pape</h1>

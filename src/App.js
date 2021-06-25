@@ -1,12 +1,15 @@
 import React from "react";
-import Navigation from "./components/Navigation";
-import Project from "./components/Project";
+import Navbar from "./components/Navbar";
+import Project from "./components/pages/Project";
 import Footer from "./components/Footer";
+import About from "./components/pages/About";
 
 function App() {
   return (
     <div>
-      <Navigation />
+      <Navbar />
+      <About />
+      <Footer />
     </div>
   );
 }
